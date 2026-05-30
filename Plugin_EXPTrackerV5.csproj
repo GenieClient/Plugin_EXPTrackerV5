@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <!-- Genie 5 Experience plugin. References only the Genie 5 plugin contract
-       (Genie.Plugins.Abstractions). Builds to a single Plugin_Experience.dll
-       that drops into {AppData}/Genie5/Plugins/ on Windows (or the platform
-       equivalent on macOS / Linux). -->
+  <!-- Genie 5 Experience plugin (Plugin_EXPTrackerV5 — port of VTCifer's
+       Plugin_EXPTracker from Genie 4). References only the Genie 5 plugin
+       contract (Genie.Plugins.Abstractions). Builds to a single
+       Plugin_EXPTrackerV5.dll that drops into {AppData}/Genie5/Plugins/ on
+       Windows (or the platform equivalent on macOS / Linux). -->
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <RootNamespace>Genie.Plugins.Experience</RootNamespace>
-    <AssemblyName>Plugin_Experience</AssemblyName>
+    <AssemblyName>Plugin_EXPTrackerV5</AssemblyName>
     <Version>1.0.0</Version>
   </PropertyGroup>
 

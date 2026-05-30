@@ -30,14 +30,14 @@ the same surface the Genie 4 `EXPTracker` plugin provided.
 dotnet build -c Release
 ```
 
-Output: `bin/Release/net8.0/Plugin_Experience.dll`.
+Output: `bin/Release/net8.0/Plugin_EXPTrackerV5.dll`.
 
 The project references the Genie 5 plugin contract (`Genie.Plugins.Abstractions`)
 from a committed copy in `lib/`, so no NuGet feed is required to compile.
 
 ## Install
 
-Copy `Plugin_Experience.dll` into your Genie 5 plugins folder:
+Copy `Plugin_EXPTrackerV5.dll` into your Genie 5 plugins folder:
 
 - **Windows:** `%APPDATA%\Genie5\Plugins\`
 - **macOS:** `~/Library/Application Support/Genie5/Plugins/`
@@ -46,7 +46,7 @@ Copy `Plugin_Experience.dll` into your Genie 5 plugins folder:
 Then in Genie 5 either:
 
 - **Reconnect** — plugins load on connect, or
-- **Plugins → Load → Plugin_Experience.dll** (menu), or
+- **Plugins → Load → Plugin_EXPTrackerV5.dll** (menu), or
 - `#plugin load Plugin_Experience` (command bar).
 
 Open the panel via **Window → Experience**, then type `exp` in-game (or train
@@ -59,7 +59,7 @@ From the **Plugins** menu:
 - **Enable / Disable → Experience** — toggle without unloading (panel blanks
   when disabled; re-enabling repaints on the next prompt).
 - **Unload → Experience** — fully remove (releases the `.dll`).
-- **Load → Plugin_Experience.dll** — load it back.
+- **Load → Plugin_EXPTrackerV5.dll** — load it back.
 
 Or from the command bar:
 
@@ -68,7 +68,7 @@ Or from the command bar:
 #plugin enable  Experience
 #plugin disable Experience
 #plugin unload  Experience
-#plugin load    Plugin_Experience
+#plugin load    Plugin_EXPTrackerV5
 #plugin reload
 #plugin folder
 ```
