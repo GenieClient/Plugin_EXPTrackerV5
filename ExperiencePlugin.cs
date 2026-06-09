@@ -27,7 +27,7 @@ public sealed class ExperiencePlugin : IGeniePlugin
 {
     public string Id             => "genie.experience";
     public string Name           => "Experience";
-    public string Version        => "1.0";
+    public string Version        => "2.0";
     public string Author         => "Genie 5";
     public string Description     => "Tracks skill ranks and learning rates, à la the StormFront experience window.";
     public string MinHostVersion => "5.0.0";
